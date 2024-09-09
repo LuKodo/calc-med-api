@@ -3,6 +3,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './user/user.module';
 import { MedModule } from './med/med.module';
 
+require('dotenv').config();
+
 @Module({
   imports: [
     TypeOrmModule.forRoot({
